@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:id="@+id/main_layout">
+
+    <Button
+        android:id="@+id/btnFetchContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Importer les contacts" />
+
+    <Button
+        android:id="@+id/btnUploadToServer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Synchroniser avec le serveur"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/editSearchQuery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom ou numéro à rechercher"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/btnDoSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rechercher"
+        android:layout_marginTop="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvContacts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp" />
+</LinearLayout>
